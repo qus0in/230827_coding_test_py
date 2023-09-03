@@ -1,13 +1,13 @@
 from collections import deque
 import sys
 
+input = lambda: sys.stdin.readline().strip()
+print = lambda x: sys.stdout.write(str(x) + '\n')
+
 N = int(input())
 # print('N :', N)
 # stack = []
 stack = deque()
-
-input = lambda: sys.stdin.readline().strip()
-print = lambda x: sys.stdout.write(str(x) + '\n')
 
 for _ in range(N):
     command = input()
